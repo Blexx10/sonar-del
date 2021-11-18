@@ -5,7 +5,7 @@ basic.forever(function () {
     DigitalPin.P1,
     PingUnit.Centimeters
     )
-    if (distance < 50) {
+    if (distance > 50) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -13,7 +13,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-    } else if (distance < 40 && distance <= 49) {
+    } else if (distance > 40 && distance <= 49) {
         basic.showLeds(`
             # . . . .
             # . . . .
